@@ -193,27 +193,32 @@ ul {
   margin-left: auto;
 }
 
-@media screen and (min-width: 150px) {
+@media screen and (max-width: 525px) {
   .main {
     margin: 0px 32px;
+  }
+  .content > .list {
+    column-count: 1 !important;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .main {
+    width: 85%;
     margin: 0px 32px;
+  }
+  .content > .list {
+    column-count: 2;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .main {
-    margin: 0px 32px;
-  }
-}
 
 @media screen and (min-width: 1152px) {
   .main {
     width: 1152px;
     margin: 0 auto;
+  }
+  .content > .list {
+    column-count: 3;
   }
 }
